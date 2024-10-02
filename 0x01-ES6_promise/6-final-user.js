@@ -7,14 +7,11 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
   return (
     Promise.allSettled([signProm, uploadProm])
       .then((promises) => {
-        const result = JSON.parse(JSON.stringify(promises));
-        // promises.forEach((res) => {
-        //   if (res.status === 'fulfilled') result.push({ status: res.status, value: res.value });
-        //   else result.push({ status: res.status, value: `${res.reason}` });
-        // });
-        result.map((res) => (res.status === 'fulfilled'
-          ? { status: res.status, value: res.value }
-          : { status: res.status, value: `${res.reason}` }));
+        const result = [];
+        promises.forEach((res) => {
+          if (res.status === 'fulfilled') result.push({ status: res.status, value: res.value });
+          else result.push({ status: res.status, value: `${res.reason}` });
+        });
         return result;
       })
   );
