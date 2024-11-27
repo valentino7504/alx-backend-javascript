@@ -20,8 +20,7 @@ class StudentsController {
         }
         response.status(200).send(responseText);
       }).catch((err) => {
-        responseText += `\n${err.message}`;
-        response.status(500).send(responseText);
+        response.status(500).send(err.message);
       });
   }
 
