@@ -4,7 +4,7 @@
   "description": "0x06 unittests",
   "main": "index.js",
   "scripts": {
-    "test": "mocha '*.test.js'"
+    "test": "mocha"
   },
   "author": "Edwin Ade",
   "license": "MIT",
