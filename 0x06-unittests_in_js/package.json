@@ -9,7 +9,7 @@
   "author": "Edwin Ade",
   "license": "MIT",
   "dependencies": {
-    "chai": "^5.1.2",
+    "chai": "^4.3.7",
     "mocha": "^10.8.2"
   },
   "devDependencies": {

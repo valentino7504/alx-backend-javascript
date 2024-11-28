@@ -14,5 +14,7 @@ module.exports = {
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
     'no-undef': 'off',
+    'no-unused-expressions': 'off',
+    'no-self-compare': 'off',
   },
 };
