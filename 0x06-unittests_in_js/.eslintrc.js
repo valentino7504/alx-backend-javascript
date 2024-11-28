@@ -13,5 +13,6 @@ module.exports = {
     'no-console': 'off',
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
+    'no-undef': 'off',
   },
 };
